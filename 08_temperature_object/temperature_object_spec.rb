@@ -78,6 +78,7 @@ describe Temperature do
   describe "can be constructed via factory methods" do
 
     it "in degrees celsius" do
+      #puts Temperature.methods.sort
       Temperature.from_celsius(50).in_celsius.should == 50
       Temperature.from_celsius(50).in_fahrenheit.should == 122
     end
